@@ -6,3 +6,5 @@ Decidr provides the user a random card(with place data) within their given param
 RBL shows a map of all the locations around you that fits your criteria
 
 Saves some user data such as resturaunt history.
+
+Authors: Skyler Burwell, Brent Dunbar, Spencer Brown
