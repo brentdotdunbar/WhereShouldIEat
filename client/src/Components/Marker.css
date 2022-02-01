@@ -1,0 +1,55 @@
+.marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.pulse {
+    background: #d6d4d4;
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -7px -6px -6px -7px;
+
+    z-index: -1;
+}
+.pulse:after {
+    content: "";
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin: -13px 0 0 -13px;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    box-shadow: 0 0 1px 2px #00cae9;
+    animation-delay: 1.1s;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0;
+    }
+}
